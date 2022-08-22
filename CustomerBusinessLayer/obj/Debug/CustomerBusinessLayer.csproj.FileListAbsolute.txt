@@ -1,0 +1,6 @@
+D:\ASP .NET MVC\CustomerBusinessLayer\bin\Debug\CustomerBusinessLayer.dll
+D:\ASP .NET MVC\CustomerBusinessLayer\bin\Debug\CustomerBusinessLayer.pdb
+D:\ASP .NET MVC\CustomerBusinessLayer\obj\Debug\CustomerBusinessLayer.csproj.AssemblyReference.cache
+D:\ASP .NET MVC\CustomerBusinessLayer\obj\Debug\CustomerBusinessLayer.csproj.CoreCompileInputs.cache
+D:\ASP .NET MVC\CustomerBusinessLayer\obj\Debug\CustomerBusinessLayer.dll
+D:\ASP .NET MVC\CustomerBusinessLayer\obj\Debug\CustomerBusinessLayer.pdb

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CFAAssignment1.Models.FootBallLeague>     
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>@Html.ActionLink("Create New","Create")</p>
+
+@Html.Raw(TempData["InsertMessage"])
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">MatchID</th>
+            <th scope="col">TeamName1</th>
+            <th scope="col">TeamName2</th>
+            <th scope="col">MatchStatus</th>
+            <th scope="col">WinningTeam</th>
+            <th scope="col">Points</th>
+        </tr>
+    </thead>
+    @{
+        foreach (var item in Model)
+        {
+            <tbody>
+                    <tr>
+                        <td>@item.MatchID</td>
+                        <td>@item.TeamName1</td>
+                        <td>@item.TeamName2</td>
+                        <td>@item.MatchStatus</td>
+                        <td>@item.WinningTeam</td>
+                        <td>@item.Points</td>
+                    </tr>
+            </tbody>
+        }
+                }
+  </table>

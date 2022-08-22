@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseFirstModelStoreContainer" CdmEntityContainer="DatabaseFirstEntities">
+    <EntitySetMapping Name="BusInfoms">
+      <EntityTypeMapping TypeName="DatabaseFirstModel.BusInfom">
+        <MappingFragment StoreEntitySet="BusInfom">
+          <ScalarProperty Name="BusId" ColumnName="BusId" />
+          <ScalarProperty Name="BoardingPoint" ColumnName="BoardingPoint" />
+          <ScalarProperty Name="TravelDate" ColumnName="TravelDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spInsertData" FunctionName="DatabaseFirstModel.Store.spInsertData" />
+    <FunctionImportMapping FunctionImportName="spRetriveByAmount" FunctionName="DatabaseFirstModel.Store.spRetriveByAmount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseFirstModel.spRetriveByAmount_Result">
+          <ScalarProperty Name="BoardingPoint" ColumnName="BoardingPoint" />
+          <ScalarProperty Name="TravelDate" ColumnName="TravelDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spRetriveByBoardingPoint" FunctionName="DatabaseFirstModel.Store.spRetriveByBoardingPoint">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseFirstModel.spRetriveByBoardingPoint_Result">
+          <ScalarProperty Name="BusId" ColumnName="BusId" />
+          <ScalarProperty Name="BoardingPoint" ColumnName="BoardingPoint" />
+          <ScalarProperty Name="TravelDate" ColumnName="TravelDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spRetriveByDate" FunctionName="DatabaseFirstModel.Store.spRetriveByDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseFirstModel.spRetriveByDate_Result">
+          <ScalarProperty Name="BusId" ColumnName="BusId" />
+          <ScalarProperty Name="BoardingPoint" ColumnName="BoardingPoint" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spRetriveByRatings" FunctionName="DatabaseFirstModel.Store.spRetriveByRatings">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DatabaseFirstModel.spRetriveByRatings_Result">
+          <ScalarProperty Name="BusId" ColumnName="BusId" />
+          <ScalarProperty Name="BoardingPoint" ColumnName="BoardingPoint" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

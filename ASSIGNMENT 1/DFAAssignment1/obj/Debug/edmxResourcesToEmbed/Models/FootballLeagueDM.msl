@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MatchModelStoreContainer" CdmEntityContainer="MatchEntities">
+    <EntitySetMapping Name="FootBallLeagues">
+      <EntityTypeMapping TypeName="MatchModel.FootBallLeague">
+        <MappingFragment StoreEntitySet="FootBallLeague">
+          <ScalarProperty Name="MatchID" ColumnName="MatchID" />
+          <ScalarProperty Name="TeamName1" ColumnName="TeamName1" />
+          <ScalarProperty Name="TeamName2" ColumnName="TeamName2" />
+          <ScalarProperty Name="MatchStatus" ColumnName="MatchStatus" />
+          <ScalarProperty Name="WinningTeam" ColumnName="WinningTeam" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spInsertData" FunctionName="MatchModel.Store.spInsertData" />
+    <FunctionImportMapping FunctionImportName="spMatachesPlayedByJapan" FunctionName="MatchModel.Store.spMatachesPlayedByJapan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MatchModel.spMatachesPlayedByJapan_Result">
+          <ScalarProperty Name="MatchID" ColumnName="MatchID" />
+          <ScalarProperty Name="TeamName1" ColumnName="TeamName1" />
+          <ScalarProperty Name="TeamName2" ColumnName="TeamName2" />
+          <ScalarProperty Name="MatchStatus" ColumnName="MatchStatus" />
+          <ScalarProperty Name="WinningTeam" ColumnName="WinningTeam" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spRetriveStatusAsWin" FunctionName="MatchModel.Store.spRetriveStatusAsWin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MatchModel.spRetriveStatusAsWin_Result">
+          <ScalarProperty Name="MatchID" ColumnName="MatchID" />
+          <ScalarProperty Name="TeamName1" ColumnName="TeamName1" />
+          <ScalarProperty Name="TeamName2" ColumnName="TeamName2" />
+          <ScalarProperty Name="MatchStatus" ColumnName="MatchStatus" />
+          <ScalarProperty Name="WinningTeam" ColumnName="WinningTeam" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spRetriveWinning" FunctionName="MatchModel.Store.spRetriveWinning">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MatchModel.spRetriveWinning_Result">
+          <ScalarProperty Name="MatchID" ColumnName="MatchID" />
+          <ScalarProperty Name="WinningTeam" ColumnName="WinningTeam" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

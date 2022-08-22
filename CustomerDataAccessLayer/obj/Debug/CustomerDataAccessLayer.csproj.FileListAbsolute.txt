@@ -1,0 +1,15 @@
+D:\ASP .NET MVC\CustomerDataAccessLayer\bin\Debug\CustomerDataAccessLayer.pdb
+D:\ASP .NET MVC\CustomerDataAccessLayer\bin\Debug\CustomerBusinessLayer.dll
+D:\ASP .NET MVC\CustomerDataAccessLayer\bin\Debug\EntityFramework.dll
+D:\ASP .NET MVC\CustomerDataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP .NET MVC\CustomerDataAccessLayer\bin\Debug\CustomerBusinessLayer.pdb
+D:\ASP .NET MVC\CustomerDataAccessLayer\bin\Debug\EntityFramework.xml
+D:\ASP .NET MVC\CustomerDataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP .NET MVC\CustomerDataAccessLayer\obj\Debug\CustomerDataAccessLayer.csproj.AssemblyReference.cache
+D:\ASP .NET MVC\CustomerDataAccessLayer\obj\Debug\CustomerDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\ASP .NET MVC\CustomerDataAccessLayer\obj\Debug\CustomerDataAccessLayer.csproj.CopyComplete
+D:\ASP .NET MVC\CustomerDataAccessLayer\obj\Debug\CustomerDataAccessLayer.pdb
+D:\ASP .NET MVC\CustomerDataAccessLayer\bin\Debug\CustomerDataAccessLayer.exe.config
+D:\ASP .NET MVC\CustomerDataAccessLayer\bin\Debug\CustomerDataAccessLayer.exe
+D:\ASP .NET MVC\CustomerDataAccessLayer\obj\Debug\CustomerDataAccessLayer.csproj.SuggestedBindingRedirects.cache
+D:\ASP .NET MVC\CustomerDataAccessLayer\obj\Debug\CustomerDataAccessLayer.exe
